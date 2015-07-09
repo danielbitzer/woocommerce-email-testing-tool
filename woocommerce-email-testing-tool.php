@@ -1,8 +1,8 @@
 <?php
 /*
- * Plugin Name: WooCommerce Email Test
+ * Plugin Name: WooCommerce Email Testing Tool
  * Plugin URI: 
- * Description: Let's you send WooCommerce test emails.
+ * Description: Let's you test WooCommerce emails in your browser.
  * Version:  1.3
  * Author: RaiserWeb
  * Author URI: http://www.raiserweb.com
@@ -40,11 +40,14 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		
 		// set email classes for test buttons
 		$test_email_class = array(
-			'WC_Email_New_Order'=>'New Order',
+			'WC_Email_New_Order'=>'Admin: New Order',
+			'WC_Email_Cancelled_Order'=>'Admin: Cancelled Order',
 			'WC_Email_Customer_Processing_Order'=>'Processing Order',
 			'WC_Email_Customer_Completed_Order'=>'Completed Order',
 			'WC_Email_Customer_Invoice'=>'Customer Invoice',
 			'WC_Email_Customer_Note'=>'Customer Note',
+			'WC_Email_Customer_Reset_Password'=>'Reset Password',
+			'WC_Email_Customer_New_Account'=>'New Account',
 		);
 		 
 		 
